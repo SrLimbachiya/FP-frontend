@@ -1,6 +1,7 @@
 import Cookie from 'js-cookie'
 import {Component} from 'react'
 import {v4 as uuidv4} from 'uuid'
+import Loader from 'react-loader-spinner'
 import {Redirect} from 'react-router-dom'
 
 import Header from '../Header'
@@ -138,9 +139,13 @@ class Home extends Component {
   }
 
   renderLoader = () => (
-    <div>
-      <h1>loading</h1>
-    </div>
+    <Loader
+      type="ThreeDots"
+      color="#0967d2"
+      height={100}
+      width={100}
+      timeout={3000}
+    />
   )
 
   renderEverything = () => {
