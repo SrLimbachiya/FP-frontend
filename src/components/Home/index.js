@@ -160,7 +160,7 @@ class Home extends Component {
     if (isCookie === undefined) {
       return <Redirect to="/login" />
     }
-    const {showData, uploaded} = this.state
+    const {uploaded} = this.state
 
     return (
       <>
