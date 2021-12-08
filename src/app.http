@@ -1,0 +1,8 @@
+
+
+POST "https://financepeer-server.herokuapp.com/register/"
+Content-Type: application/json
+
+{
+
+}
